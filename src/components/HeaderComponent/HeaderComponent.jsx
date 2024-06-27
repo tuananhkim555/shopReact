@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { Col } from 'antd' 
+import { Badge, Col } from 'antd' 
 import { WrapperHeader, WrapperHeaderAccount, WrapperTextHeader, WrapperTextHeaderSmall } from './style'
 import { UserOutlined, CaretDownOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
@@ -40,11 +40,13 @@ const HeaderComponent = () => {
                         </div>             
                     </div>
                 </WrapperHeaderAccount>
-                <div>     
+                <div>    
+                    <Badge count={4} size='small'>
                         <ShoppingCartOutlined style={{
                             color:'#fff',
                             fontSize:'30px'
                         }} />
+                    </Badge>
                             <WrapperTextHeaderSmall>Giỏ hàng
                             </WrapperTextHeaderSmall>
                 </div>
